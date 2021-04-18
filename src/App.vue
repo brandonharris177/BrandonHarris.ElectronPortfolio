@@ -1,5 +1,5 @@
 <template>
-  <QRCodes msg="Name"/>
+  <QRCodes/>
 </template>
 
 <script>
