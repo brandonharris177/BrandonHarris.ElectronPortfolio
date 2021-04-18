@@ -1,4 +1,7 @@
 <template>
+  <h1>
+    Brandon Harris
+  </h1>
   <qrcode-vue :value="value" :size="size" level="H" />
 </template>
 <script>
