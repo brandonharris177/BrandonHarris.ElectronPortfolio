@@ -30,8 +30,9 @@
         cardano_price: "",
       }
     },
-    mounted () {
-      axios
+    methods: {
+      coinGeckoAPIcall: function() {
+         axios
         .get('https://api.coingecko.com/api/v3/coins/tezos')
         .then(response => (this.tezos_price = response.data.market_data.current_price.usd))
         .catch(error => console.log(error))
@@ -43,6 +44,18 @@
         .get('https://api.coingecko.com/api/v3/coins/burst')
         .then(response => (this.burst_price = response.data.market_data.current_price.usd))
         .catch(error => console.log(error))
+      },
+      intervalFetchData: function() {
+        setInterval(() => {
+          this.coinGeckoAPIcall();
+          //warning that application is currently refreshing, set to 5 second intervals right now, can be changed to refresh more or less frequently
+          console.log("CAUTION: currently making calls")
+        }, 5000);
+      }
+    },
+    mounted () {
+        this.coinGeckoAPIcall();
+        // this.intervalFetchData();
       },
     components: {
       QrcodeVue,
