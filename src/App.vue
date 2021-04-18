@@ -1,5 +1,6 @@
 <template>
   <QRCodes/>
+  <a href="https://github.com/brandonharris177/"> GitHub </a>
 </template>
 
 <script>
