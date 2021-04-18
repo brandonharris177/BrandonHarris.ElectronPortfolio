@@ -1,23 +1,14 @@
 <template>
-  <QRCodeName msg="Name"/>
-  <QRCodeTezos msg="Tezos Price"/>
-  <QRCodeBurst msg="Burst Price"/>
-  <QRCodeCardano msg="Cardano Price"/>
+  <QRCodes msg="Name"/>
 </template>
 
 <script>
-import QRCodeName from './components/QRCodeName.vue';
-import QRCodeTezos from './components/QRCodeTezos.vue';
-import QRCodeBurst from './components/QRCodeBurst.vue';
-import QRCodeCardano from './components/QRCodeCardano.vue';
+import QRCodes from './components/QRCodes.vue';
 
 export default {
   name: 'App',
   components: {
-    QRCodeName,
-    QRCodeTezos,
-    QRCodeBurst,
-    QRCodeCardano
+    QRCodes,
   }
 }
 </script>
