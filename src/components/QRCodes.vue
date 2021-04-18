@@ -55,6 +55,7 @@
     },
     mounted () {
         this.coinGeckoAPIcall();
+        //turn off next line to disable auto-refresh
         // this.intervalFetchData();
       },
     components: {
