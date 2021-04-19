@@ -10,6 +10,8 @@ How to run this project:
     npm install
     npm run electron:serve
 
+NOTICE: The API used for this project only allows a 500 per day hit limit and the QR codes auto refreash every 5 seconds. This rate can be lowered or disabled in the QRCodes.vue folder. 
+
 ### Compiles and minifies for production
 ```
 yarn build
