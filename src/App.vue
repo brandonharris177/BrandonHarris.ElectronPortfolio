@@ -1,11 +1,11 @@
 <template>
   <QRCodes/>
-  <a href="https://github.com/brandonharris177/"> GitHub </a>
-  <a href="https://www.linkedin.com/in/brandon-harris177/"> LinkedIn </a>
-  <a href="mailto:brandonharris177@gmail.com"> brandonharris177@gmail.com </a>
-  <a href="https://drive.google.com/file/d/1o_Qz3WAUTVgcdZk7os_WQ4p_IO_Gtc_L/view?usp=sharing"> Resume </a>
   <a class="twitter-timeline" href="https://twitter.com/BBCAfrica?ref_src=twsrc%5Etfw">Tweets by BBCAfrica</a>
   <a class="twitter-timeline" href="https://twitter.com/ethereum?ref_src=twsrc%5Etfw">Tweets by ethereum</a>
+  <a class="link" href="https://github.com/brandonharris177/"> GitHub </a>
+  <a class= "link" href="https://www.linkedin.com/in/brandon-harris177/"> LinkedIn </a>
+  <a class= "link" href="mailto:brandonharris177@gmail.com"> brandonharris177@gmail.com </a>
+  <a class= "link" href="https://drive.google.com/file/d/1o_Qz3WAUTVgcdZk7os_WQ4p_IO_Gtc_L/view?usp=sharing"> Resume </a>
 </template>
 
 <script>
