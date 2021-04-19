@@ -63,5 +63,9 @@ div.links{
   display: flex;
   flex-flow: column;
 }
+a.link{
+  color: #2c3e50;
+  font-size: 150%;
+}
 
 </style>
