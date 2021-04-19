@@ -1,14 +1,14 @@
 # brandonharris.electronportfolio
 
-## Project setup
-```
-yarn install
-```
+Project built unsing Windows 10 and node 12.
+Dependancies used:
+    vue-cli-plugin-electron-builder
+    qrcode.vue
+    axios
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
+How to run this project:
+    npm install
+    npm run electron:serve
 
 ### Compiles and minifies for production
 ```

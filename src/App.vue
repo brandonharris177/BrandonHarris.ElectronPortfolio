@@ -1,5 +1,9 @@
 <template>
   <QRCodes/>
+  <a href="https://github.com/brandonharris177/"> GitHub </a>
+  <a href="https://www.linkedin.com/in/brandon-harris177/"> LinkedIn </a>
+  <a href= "mailto:brandonharris177@gmail.com"> brandonharris177@gmail.com </a>
+  <a href="https://drive.google.com/file/d/1o_Qz3WAUTVgcdZk7os_WQ4p_IO_Gtc_L/view?usp=sharing"> Resume </a>
 </template>
 
 <script>
