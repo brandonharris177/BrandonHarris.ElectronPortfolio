@@ -1,20 +1,22 @@
 <template>
-  <h1>
-    Brandon Harris
-  </h1>
-  <qrcode-vue :value="value" :size="size" level="H" />
-  <h1>
-    Tezos Price
-  </h1>
-  <qrcode-vue :value= tezos_price.toString() :size="size" level="H" />
-  <h1>
-    Burst Price
-  </h1>
-  <qrcode-vue :value= burst_price.toString() :size="size" level="H" />
-  <h1>
-    Cardano Price
-  </h1>
-  <qrcode-vue :value= cardano_price.toString() :size="size" level="H" />
+  <div>
+    <h1>
+      Brandon Harris
+    </h1>
+    <qrcode-vue :value="value" :size="size" level="H" />
+    <h1>
+      Tezos Price
+    </h1>
+    <qrcode-vue :value= tezos_price.toString() :size="size" level="H" />
+    <h1>
+      Burst Price
+    </h1>
+    <qrcode-vue :value= burst_price.toString() :size="size" level="H" />
+    <h1>
+      Cardano Price
+    </h1>
+    <qrcode-vue :value= cardano_price.toString() :size="size" level="H" />
+  </div>
 </template>
 <script>
   import QrcodeVue from 'qrcode.vue';
