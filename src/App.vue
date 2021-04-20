@@ -42,6 +42,7 @@ export default {
   text-align: center;
   color: #0451a3;
   margin-top: 60px;
+  background-color: #2b2c2e;
 }
 div.body {
   display: flex;
