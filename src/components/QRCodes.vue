@@ -9,19 +9,19 @@
     <h1>
       Tezos Price
     </h1>
-    <qrcode-vue :value= tezos_price.toString() :size="size" level="H" class = "qrcode"/>
+    <qrcode-vue :value= "'$' + tezos_price.toString() + 'USD'" :size="size" level="H" class = "qrcode"/>
   </div>
   <div class = "qrcode">
     <h1>
       Burst Price
     </h1>
-    <qrcode-vue :value= burst_price.toString() :size="size" level="H" class = "qrcode"/>
+    <qrcode-vue :value= "'$' + burst_price.toString() + 'USD'" :size="size" level="H" class = "qrcode"/>
   </div>
   <div class = "qrcode">
     <h1>
       Cardano Price
     </h1>
-    <qrcode-vue :value= cardano_price.toString() :size="size" level="H" class = "qrcode"/>
+    <qrcode-vue :value= "'$' + cardano_price.toString() + 'USD'" :size="size" level="H" class = "qrcode"/>
   </div>
 </template>
 <script>
