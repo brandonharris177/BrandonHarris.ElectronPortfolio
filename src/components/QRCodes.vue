@@ -57,14 +57,14 @@
         setInterval(() => {
           this.coinGeckoAPIcall();
           //warning that application is currently refreshing, set to 5 second intervals right now, can be changed to refresh more or less frequently
-          console.log("CAUTION: currently making calls")
-        }, 5000);
+          // console.log("CAUTION: currently making calls")
+        }, 5000); //change number here measured in 1/1000 of a second to change the refresh rate
       }
     },
     mounted () {
         this.coinGeckoAPIcall();
         //turn off next line to disable auto-refresh
-        // this.intervalFetchData();
+        this.intervalFetchData();
       },
     components: {
       QrcodeVue,

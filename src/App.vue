@@ -1,4 +1,5 @@
 <template>
+  <h1>Brandon Harris Electron Portfolio</h1>
   <button v-on:click = "downloadPDF">Download as PDF</button>
   <div class = "body" id = "body">
     <QRCodes/>
@@ -62,30 +63,16 @@ export default {
   margin-top: 60px;
   background-color: #2b2c2e;
 }
+button{
+  background-color: #0451a3;
+  color: white;
+  font-size: 250%;
+}
 div.body {
   display: flex;
   flex-flow: row wrap;
   width: 100%;
   justify-content: center;
-}
-
-@media screen and (max-width: 900px) {
-  div.body {
-    flex-flow: column;
-  }
-  div.qrcode {
-    width: 100%;
-  }
-  div.tweets{
-    margin: 0px;
-    width: 100%;
-    flex-flow: column;
-    align-items: center;
-  }
-  div.tweet{
-    width: 100%;
-    margin-bottom: 5%;
-  }
 }
 div.tweets{
   display: flex;
@@ -105,9 +92,23 @@ a.link{
   color: #0451a3;
   font-size: 150%;
 }
-button{
-  background-color: #0451a3;
-  color: white;
-  font-size: 250%;
+
+@media screen and (max-width: 900px) {
+  div.body {
+    flex-flow: column;
+  }
+  div.qrcode {
+    width: 100%;
+  }
+  div.tweets{
+    margin: 0px;
+    width: 100%;
+    flex-flow: column;
+    align-items: center;
+  }
+  div.tweet{
+    width: 100%;
+    margin-bottom: 5%;
+  }
 }
 </style>
