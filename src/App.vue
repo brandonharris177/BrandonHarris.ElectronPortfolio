@@ -1,5 +1,6 @@
 <template>
-  <div class = "body">
+  <button v-on:click = "downloadPDF">Download as PDF</button>
+  <div class = "body" id = "body">
     <QRCodes/>
     <div class = "tweets">
       <div class = "tweet">
@@ -20,17 +21,34 @@
 
 <script>
 import QRCodes from './components/QRCodes.vue';
+import html2pdf from 'html2pdf-jspdf2';
+
 
 export default {
   name: 'App',
   components: {
     QRCodes,
   },
+  methods: {
+    downloadPDF: function() {
+      var element = document.getElementById('body');
+      console.log(element)
+      var opt = {
+        margin:       0,
+        filename:     'brandonharrisElectronPortfolio.pdf',
+        image:        { type: 'jpeg', quality: 0.98 },
+        html2canvas:  { scale: 1 },
+        jsPDF:        { unit: 'in', format: 'letter', orientation: 'portrait' }
+      };
+    // New Promise-based usage:
+    html2pdf().set(opt).from(element).save();
+    }
+  },
   mounted() {
     let externalScript = document.createElement('script')
     externalScript.setAttribute('src', 'https://platform.twitter.com/widgets.js')
     document.head.appendChild(externalScript)
-  },
+  }
 }
 </script>
 
@@ -87,5 +105,9 @@ a.link{
   color: #0451a3;
   font-size: 150%;
 }
-
+button{
+  background-color: #0451a3;
+  color: white;
+  font-size: 250%;
+}
 </style>

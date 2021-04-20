@@ -5,6 +5,7 @@ Dependancies used:
     vue-cli-plugin-electron-builder
     qrcode.vue
     axios
+    html2pdf-jspdf2
 
 How to run this project:
     npm install
