@@ -1,21 +1,27 @@
 <template>
-  <div>
+  <div class = "qrcode">
     <h1>
       Brandon Harris
     </h1>
-    <qrcode-vue :value="value" :size="size" level="H" />
+    <qrcode-vue :value="value" :size="size" level="H" class = "qrcode"/>
+  </div>
+  <div class = "qrcode">
     <h1>
       Tezos Price
     </h1>
-    <qrcode-vue :value= tezos_price.toString() :size="size" level="H" />
+    <qrcode-vue :value= tezos_price.toString() :size="size" level="H" class = "qrcode"/>
+  </div>
+  <div class = "qrcode">
     <h1>
       Burst Price
     </h1>
-    <qrcode-vue :value= burst_price.toString() :size="size" level="H" />
+    <qrcode-vue :value= burst_price.toString() :size="size" level="H" class = "qrcode"/>
+  </div>
+  <div class = "qrcode">
     <h1>
       Cardano Price
     </h1>
-    <qrcode-vue :value= cardano_price.toString() :size="size" level="H" />
+    <qrcode-vue :value= cardano_price.toString() :size="size" level="H" class = "qrcode"/>
   </div>
 </template>
 <script>
@@ -65,3 +71,9 @@
     },
   }
 </script>
+
+<style>
+div.qrcode {
+  width: 50%;
+}
+</style>
