@@ -1,6 +1,6 @@
 # brandonharris.electronportfolio
 
-Project built unsing Windows 10 and node 12.
+Electron app built using the Vue CLI and node 12 on Windows 10.
 Dependancies used:
     vue-cli-plugin-electron-builder
     qrcode.vue

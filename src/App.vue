@@ -40,7 +40,7 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #0451a3;
   margin-top: 60px;
 }
 div.body {
@@ -49,11 +49,30 @@ div.body {
   width: 100%;
   justify-content: center;
 }
+
+@media screen and (max-width: 900px) {
+  div.body {
+    flex-flow: column;
+  }
+  div.qrcode {
+    width: 100%;
+  }
+  div.tweets{
+    margin: 0px;
+    width: 100%;
+    flex-flow: column;
+    align-items: center;
+  }
+  div.tweet{
+    width: 100%;
+    margin-bottom: 5%;
+  }
+}
 div.tweets{
   display: flex;
   align-content: center;
   width: 90%;
-  margin: 30px;
+  margin: 2%;
   justify-content: space-around;
 }
 div.tweet{
@@ -64,7 +83,7 @@ div.links{
   flex-flow: column;
 }
 a.link{
-  color: #2c3e50;
+  color: #0451a3;
   font-size: 150%;
 }
 
